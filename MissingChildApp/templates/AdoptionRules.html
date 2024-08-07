@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+<head>
+<title>Missing Child App</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="6" color="yellow">Missing Child Identification and Adoption</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul><center>
+	  <h6><li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'Login' %}">Official Login</a></li>
+<li><a href="{% url 'Upload' %}">Upload Suspected Child</a></li>
+      <li><a href="{% url 'WelfareLogin' %}">Welfare Login</a></li>
+	  <li><a href="{% url 'ParentLogin' %}">Parents Login</a></li>
+	  <li><a href="{% url 'ParentRegister' %}">Parents Register</a></li>	
+	  <li><a href="{% url 'AdoptionRules' %}">Adoption Rules</a></li></h6>
+		</center></ul>
+		
+	</div>
+	<div id="splash">
+		<center><img class="pic" src="https://static.vecteezy.com/system/resources/previews/045/840/272/non_2x/child-adoption-agency-illustration-to-taking-kids-to-be-raised-and-educated-with-love-and-affection-in-a-flat-style-cartoon-background-vector.jpg" width="370" height="200" alt="" /></center>
+	</div>
+	
+	<p align="justify"><font size="3" style="font-family: Comic Sans MS" color='black'>
+		<b><center>Adoption Rules </center></b>
+
+<li>A parent has to be minimum 25 years of age to adopt.</li>
+<li>An adoption petition is filed in court, and upon approval, an adoption order is issued, legally establishing the parent-child relationship.</li>
+<li>A thorough assessment of the prospective adoptive parents' suitability is conducted through a home study.</li>
+<li><a href ="https://cara.wcd.gov.in/Parents/eg_ri.html">more rules</a></li>
+<center><b>Adoption Documents</b></center>
+<li>Adhaar card of the parents</li>
+<li>Income certificate of the parents</li>
+<li>Marriage certificate of the adopting couple</li>
+<li><a href="https://cara.wcd.gov.in/Parents/document_RI.html">more documents</a></li>
+
+
+</p>
+</body>
+</html>

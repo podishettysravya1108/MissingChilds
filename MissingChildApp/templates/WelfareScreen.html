@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+<title>Missing Child App</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="6" color="yellow">Missing Child Identification and Adoption</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+          <ul>
+          <li><a href="{% url 'ViewAdoption' %}">View Adoption Details</a></li>
+		  <li><a href="{% url 'index' %}">Logout</a></li>
+		  </ul>
+        </div>
+        <div class="hbg"><center><img src="https://cdn.slidesharecdn.com/ss_thumbnails/agencyrelatedtowelfareservicestothechildren-220722092356-f6a6a146-thumbnail.jpg?width=640&height=640&fit=bounds" width="570" height="300" alt="" /></center></div>
+       <p align="justify"><font size="3" style="font-family: Comic Sans MS" color="black"> <font size="" color="red"><center>{{ data }}</center></font></p>
+ 
+ <br/><br/><br/><br/>
+  </body>
+</html>

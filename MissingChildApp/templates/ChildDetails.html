@@ -1,0 +1,62 @@
+{% load static %}
+<html>
+<head>
+<title>Missing Child App</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="4" color="yellow">Missing Child Identification System using Deep
+Learning and Multiclass SVM</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+          <li><a href="{% url 'ChildDetails' %}">Resubmit Child Details</a></li>
+		  <li><a href="{% url 'index' %}">Logout</a></li>
+		  </ul>
+<br class="clearfix" />
+				</div>
+			
+	<div id="splash">
+		<img class="pic" src="{% static 'images/investor.jpg' %}" width="870" height="230" alt="" />
+	</div>	
+			<center>
+<form name="f1" method="post" action={% url 'ChildDetailsAction' %}>
+	{% csrf_token %}<br/>
+   <h3><b>Resubmit Child Details Screen</b></h3>
+   
+	<font size="" color="black"><center>{{ data }}</center></font>
+						
+						<table align="center" width="80" >
+			 
+		<tr><td><b>Child&nbsp;Age</b></td><td><select name="t1">
+		<option value="1-5">1-5</option>
+		<option value="5-7">5-7</option>
+		<option value="7-10">7-10</option>
+		<option value="10-15">10-15</option>
+		</select>
+		</td></tr>
+
+		<tr><td><b>Child&nbsp;Colour</b></td><td><select name="t2">
+		<option value="Fair">Fair</option>
+		<option value="Normal">Normal</option>
+		</select>
+		</td></tr>
+		 
+			<tr><td></td><td><input type="submit" value="Submit">
+			</td>
+			</table>
+				</div>	
+					
+				</div>
+				<br/><br/><br/><br/><br/><br/>
+				
+	</body>
+</html>
